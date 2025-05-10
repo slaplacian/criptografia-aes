@@ -8,6 +8,23 @@
 
     ./aes arq.txt
 
+A saída será algo como:
+    
+    ***Time to Key Expand: 5 ms
+    ====    Plain Text     ====
+    Ola mundo
+    somos do IME
+    ==== End of Plain Text ====
+    ***Time to Encrypt: 97 ms
+    ===    Cipher Text     ===
+    �ep     �X����1Z�{���c�5���s�|6
+    === End of Cipher Text ===
+    ***Time to Decrypt: 174 ms
+    ====    Plain Text     ==== (Again)
+    Ola mundo
+    somos do IME
+    ==== End of Plain Text ==== (Again)
+
 ## Como foi implementado?
 
 foi implementado usando a [FIPS](fips-aes.pdf).
