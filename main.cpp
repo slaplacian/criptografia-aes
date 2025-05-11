@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
 
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
-    std::cout << "***Time to Encrypt: " << duration.count() << " ms" << std::endl;
+    std::cout << "***Time to Encrypt: " << duration.count() << " us" << std::endl;
     
     std::cout << "===    Cipher Text     ===" << std::endl;
     
@@ -48,13 +48,13 @@ int main(int argc, char **argv) {
 
     duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
-    std::cout << "***Time to Decrypt: " << duration.count() << " ms" << std::endl;
+    std::cout << "***Time to Decrypt: " << duration.count() << " us" << std::endl;
 
-    std::cout << "====    Plain Text     ==== (Again)" << std::endl;
+    std::cout << "====    Plain Text     ====" << std::endl;
     
     std::cout << blocks << std::endl;
 
-    std::cout << "==== End of Plain Text ==== (Again)" << std::endl;
+    std::cout << "==== End of Plain Text ====" << std::endl;
 
     return 0;
 }

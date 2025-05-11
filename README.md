@@ -20,10 +20,10 @@ A saída será algo como:
     �ep     �X����1Z�{���c�5���s�|6
     === End of Cipher Text ===
     ***Time to Decrypt: 174 ms
-    ====    Plain Text     ==== (Again)
+    ====    Plain Text     ====
     Ola mundo
     somos do IME
-    ==== End of Plain Text ==== (Again)
+    ==== End of Plain Text ====
 
 ## Como foi implementado?
 
@@ -31,16 +31,16 @@ foi implementado usando a [FIPS](fips-aes.pdf).
 
 ## Teste de Memória
 
-Foi feito utilizando valgrind
+Foi feito utilizando valgrind, basta rodar memory-test.sh
 
-    valgrind --tool=massif --massif-out-file=aes_memory_use.out --time-unit=ms --detailed-freq=1 --stacks=yes ./aes arq.txt
+    ./memory-test.sh
 
-o resultado está em [aes_memory_use.out](experiment-result/aes_memory_use.out)
+o resultado está em [memory](experiment-result/memory)
 
 ## Teste de tempo
 
 basta rodar o time-test.sh
 
-    time-test.sh arq.txt
+    ./time-test.sh
 
-Será gerada um arquivo com 100 saídas.
+o resultado está em [test](experiment-result/test)

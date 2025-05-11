@@ -20,7 +20,7 @@ Blocks::Blocks(std::string data, unsigned char *key_data) {
 
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
-    std::cout << "***Time to Key Expand: "<< duration.count() << " ms" << std::endl;
+    std::cout << "***Time to Key Expand: "<< duration.count() << " us" << std::endl;
 
 }
 
